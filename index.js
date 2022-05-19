@@ -1,8 +1,9 @@
 const { readFileSync, writeFileSync } = require("fs");
 
 function getAllTodos() {
-  const data = readFileSync("todo.json");
-  const result = JSON.parse(data);
+   
+    const data = readFileSync("todo.json");
+   const result = JSON.parse(data);
 
   result.map((item) => {
     if (item.completed == true) {
@@ -11,6 +12,8 @@ function getAllTodos() {
       console.log(`(${item.id})`, item.title);
     }
   });
+
+
 }
 
 function createTodo(title) {
@@ -61,9 +64,7 @@ function updateTodo(id) {
   }
 
   todos = JSON.stringify(todos);
-
   writeFileSync("todo.json", todos);
-
   console.log("completed");
 }
 

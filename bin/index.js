@@ -11,7 +11,7 @@ yargs.command({
 });
 
 yargs.command({
-  command: "create",
+  command: "add",
   builder: {
     title: {
       describe: "Todo title",
