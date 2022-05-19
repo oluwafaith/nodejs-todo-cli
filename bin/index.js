@@ -40,7 +40,7 @@ yargs.command({
 
 
 yargs.command({
-  command: "update",
+  command: "complete",
   builder: {
     title: {
       describe: "update title",

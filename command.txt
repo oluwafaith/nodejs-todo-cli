@@ -1,0 +1,4 @@
+to start: start list
+to create: start create  --title="add title"
+to mark as completed  :start complete  --title=5
+to delete : start delete  --title=6;
