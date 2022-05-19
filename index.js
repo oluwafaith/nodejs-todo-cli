@@ -30,12 +30,12 @@ function createTodo(title) {
   console.log("new data added");
 }
 
-function deleteTodo(title) {
+function deleteTodo(id) {
   const readTodo = readFileSync("todo.json");
   let todos = JSON.parse(readTodo);
 
   const filtered = todos.filter((item) => {
-    return item.id != title;
+    return item.id != id;
   });
 
   todos = JSON.stringify(filtered);
@@ -48,13 +48,13 @@ function deleteTodo(title) {
     console.log("title does not exist");
   }
 }
-function updateTodo(title) {
+function updateTodo(id) {
   const readTodo = readFileSync("todo.json");
   let parsedData = readTodo.toString();
   let todos = JSON.parse(parsedData);
 
   for (const item of todos) {
-    if (item.id == title) {
+    if (item.id == id) {
       item.completed = true;
       break;
     }

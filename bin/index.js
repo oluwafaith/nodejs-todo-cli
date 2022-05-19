@@ -27,14 +27,14 @@ yargs.command({
 yargs.command({
   command: "delete",
   builder: {
-    title: {
+    id: {
       describe: "delete title",
       type: "string",
       demandOption: true,
     },
   },
   handler: function (argv) {
-    controller.deleteTodo(argv.title);
+    controller.deleteTodo(argv.id);
   },
 });
 
@@ -42,14 +42,14 @@ yargs.command({
 yargs.command({
   command: "complete",
   builder: {
-    title: {
+    id: {
       describe: "update title",
       type: "string",
       demandOption: true,
     },
   },
   handler: function (argv) {
-    controller.updateTodo(argv.title);
+    controller.updateTodo(argv.id);
   },
 });
 

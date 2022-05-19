@@ -1,8 +1,1 @@
-[
-  { "id": 1, "completed": false, "title": "latest edition" },
-  { "id": 2, "completed": false, "title": "latest edition" },
-  { "id": 3, "completed": false, "title": "latest edition" },
-  { "id": 4, "completed": false, "title": "latest edition" },
-  { "id": 5, "completed": false, "title": "latest edition" },
-  { "id": 6, "completed": true, "title": "latest edition" }
-]
+[{"id":1,"completed":false,"title":"latest edition"},{"id":2,"completed":false,"title":"latest edition"},{"id":3,"completed":false,"title":"latest edition"},{"id":4,"completed":false,"title":"latest edition"},{"id":5,"completed":true,"title":"latest edition"},{"id":6,"completed":false,"title":"solve algo"}]
